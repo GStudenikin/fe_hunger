@@ -1,0 +1,41 @@
+div.home
+    div.home__decoration
+        svg.home__decoration__line(width="1px" height="100%")
+                line(x1="0" y1="1" x2="0" y2="100%" stroke="rgba(255, 255, 255, 0.2)")
+        svg.home__decoration__line_bubble(width="62px" height="100%")
+                line(x1="31" y1="102" x2="31" y2="556" stroke="rgba(255, 255, 255, 0.2)" stroke-width="0.5")
+                circle(cx="31" cy="587" r="30" stroke="rgba(255, 255, 255, 0.2)" fill-opacity="0")
+                line(x1="31" y1="618" x2="31" y2="100%" stroke="rgba(255, 255, 255, 0.2)" stroke-width="0.5")
+        svg.home__decoration__line(width="1px" height="100%")
+                line(x1="0" y1="1" x2="0" y2="100%" stroke="rgba(255, 255, 255, 0.2)")
+    div.home__header
+        img.home__header__logo(src="./img/logo.svg")
+        header.home__header__menu
+            a.home__header__menu__item(href="home") home
+            a.home__header__menu__item(href="about") about
+            a.home__header__menu__item(href="team") team
+            a.home__header__menu__item(href="booking") booking
+            a.home__header__menu__item(href="menu") menu
+            a.home__header__menu__item(href="galerie") galerie
+            a.home__header__menu__item(href="events") events
+            a.home__header__menu__item(href="contact") contact
+            div.break
+            svg.home__header__menu__underline(width="42%" height="2px")
+                line(x1="0" y1="0" x2="100%" y2="0" stroke="rgba(255, 255, 255, 0.2)")
+            svg.home__header__menu__underline(width="42%" height="2px")
+                line(x1="0" y1="0" x2="100%" y2="0" stroke="rgba(255, 255, 255, 0.2)")
+    div.home__main
+        div.home__main__type restaurant
+        div.home__main__name hungry people
+        div.home__main__decoration
+        div.home__main__menu
+            a.home__main__menu__button.home__main__menu__button_book(href="booking") book table
+            a.home__main__menu__button.home__main__menu__button_explore(href="explore") explore
+    div.home__social
+        a.home__social__button.home__social__button_fb(href="facebook")
+            img(src="./img/social-facebook.svg")
+        a.home__social__button.home__social__button_tw(href="twitter")
+            img(src="./img/social-twitter.svg")
+        a.home__social__button.home__social__button_ig(href="instagram")
+            img(src="./img/social-instagram.svg")
+    a.home__down-btn(href="down") keyboard_arrow_down
