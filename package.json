@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/GStudenikin/fe_hunger#readme",
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "pug": "^3.0.2",
     "sass": "^1.32.8"
   }
