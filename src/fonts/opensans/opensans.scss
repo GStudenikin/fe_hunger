@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("./OpenSans-Regular/OpenSans-Regular.eot");
+  src: url("./OpenSans-Regular/OpenSans-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./OpenSans-Regular/OpenSans-Regular.svg#OpenSans-Regular")
+      format("svg"),
+    url("./OpenSans-Regular/OpenSans-Regular.ttf") format("truetype"),
+    url("./OpenSans-Regular/OpenSans-Regular.woff") format("woff"),
+    url("./OpenSans-Regular/OpenSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("./OpenSans-SemiBold/OpenSans-SemiBold.eot");
+  src: url("./OpenSans-SemiBold/OpenSans-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./OpenSans-SemiBold/OpenSans-SemiBold.svg#OpenSans-Bold") format("svg"),
+    url("./OpenSans-SemiBold/OpenSans-SemiBold.ttf") format("truetype"),
+    url("./OpenSans-SemiBold/OpenSans-SemiBold.woff") format("woff"),
+    url("./OpenSans-SemiBold/OpenSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("./OpenSans-Bold/OpenSans-Bold.eot");
+  src: url("./OpenSans-Bold/OpenSans-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./OpenSans-Bold/OpenSans-Bold.svg#OpenSans-Bold") format("svg"),
+    url("./OpenSans-Bold/OpenSans-Bold.ttf") format("truetype"),
+    url("./OpenSans-Bold/OpenSans-Bold.woff") format("woff"),
+    url("./OpenSans-Bold/OpenSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
