@@ -1,0 +1,19 @@
+//- Article:
+- var title = "master chef";
+- var subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.";
+- var text = "Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.";
+
+div.team
+    div.team__decoration
+        svg.team__decoration__line(width="1px" height="100%")
+            line(x1="0" y1="1" x2="0" y2="100%" stroke="rgba(255, 255, 255, 0.2)")
+        svg.team__decoration__line(width="62px" height="100%")
+            line(x1="31" y1="0" x2="31" y2="100%" stroke="rgba(255, 255, 255, 0.2)" stroke-width="0.5")
+        svg.team__decoration__line(width="1px" height="100%")
+            line(x1="0" y1="1" x2="0" y2="100%" stroke="rgba(255, 255, 255, 0.2)")
+    div.team__label our team
+    div.team__info
+        include ./../simple/illustration/illustration
+        +illustration("./img/team.png", "team__illustration", "left")
+        include ./../simple/article/article
+        +article(title, subtitle, text, "team__article")

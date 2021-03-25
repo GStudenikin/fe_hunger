@@ -7,6 +7,7 @@ import './components/simple/illustration/illustration.scss'
 // sections
 import './components/home/home.scss'
 import './components/about-us/about-us.scss'
+import './components/team/team.scss'
 
 import './fonts/banny/banny.scss';
 import './fonts/opensans/opensans.scss';
