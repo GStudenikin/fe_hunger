@@ -1,0 +1,11 @@
+//- framePosition left | Right
+
+mixin illustration(imgSrc, className, framePosition)
+    if className
+        div.illustration(class=className)
+            if framePosition
+                img.illustration__img(class="illustration__img_"+framePosition, src=imgSrc)
+                div.illustration__frame(class="illustration__frame_"+framePosition)
+            else
+                img.illustration__img(src=imgSrc)
+                div.illustration__frame(class="illustration__frame_right")

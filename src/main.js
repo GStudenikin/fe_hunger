@@ -2,6 +2,7 @@ import './main.scss';
 
 //simple
 import './components/simple/article/article.scss'
+import './components/simple/illustration/illustration.scss'
 
 // sections
 import './components/home/home.scss'
