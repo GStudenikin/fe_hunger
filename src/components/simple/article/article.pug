@@ -1,0 +1,13 @@
+mixin article(title, subtitle, text, className)
+    if className
+        div.article(class=className)
+            h1.article__title=title
+            div.article__decoration
+            h2.article__subtitle=subtitle
+            p.article__text=text
+    else
+        div.article
+            h1.article__title=title
+            div.article__decoration
+            h2.article__subtitle=subtitle
+            p.article__text=text

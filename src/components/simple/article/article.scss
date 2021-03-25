@@ -1,0 +1,37 @@
+.article {
+  text-align: center;
+
+  &__decoration {
+    width: 60px;
+    height: 5px;
+    background: #e8c300;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  &__title {
+    font-family: Banny;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  &__subtitle {
+    font-family: OpenSans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-top: 11px;
+  }
+
+  &__text {
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 20px;
+  }
+}
