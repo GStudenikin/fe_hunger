@@ -18,7 +18,7 @@
 
   &__info {
     width: 100%;
-    height: 576px;
+    height: 616px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -29,16 +29,18 @@
   }
 
   &__label {
-    height: 100px;
+    height: 60px;
     font-family: OpenSans;
     font-weight: 700;
     font-size: 12px;
-    line-height: 100px;
+    line-height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     letter-spacing: 0.5em;
     text-transform: uppercase;
-    margin-left: auto;
     color: #ffffff;
   }
 
