@@ -35,10 +35,6 @@
 
         &__field {
           width: 49.5%;
-          &:hover,
-          &:focus {
-            width: calc(47%-20px);
-          }
         }
       }
     }
