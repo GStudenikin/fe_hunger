@@ -1,0 +1,27 @@
+//- Article:
+- var title = "chocolate pancakes";
+- var subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.";
+- var text = "Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.";
+
+div.specialties
+    div.specialties__decoration
+        svg.specialties__decoration__line(width="1px" height="100%")
+            line(x1="0" y1="1" x2="0" y2="100%" stroke="rgba(255, 255, 255, 0.2)")
+        svg.specialties__decoration__line(width="62px" height="100%")
+            line(x1="31" y1="0" x2="31" y2="100%" stroke="rgba(255, 255, 255, 0.2)" stroke-width="0.5")
+        svg.specialties__decoration__line(width="1px" height="100%")
+            line(x1="0" y1="1" x2="0" y2="100%" stroke="rgba(255, 255, 255, 0.2)")
+    div.specialties__label specialties
+    div.specialties__info
+        include ./../simple/illustration/illustration
+        +illustration("./img/specialties1.jpg", "specialties__illustration", "left")
+        include ./../simple/article/article
+        +article(title, subtitle, text, "specialties__article")
+    div.specialties__control
+        form.specialties__control__block(action="action")
+            input.specialties__control__block__button(checked type="radio" name="rb" id="rb_1" value="img1")
+            label.specialties__control__block__button__label(for="rb_1")
+            input.specialties__control__block__button(type="radio" name="rb" id="rb_2" value="img2")
+            label.specialties__control__block__button__label(for="rb_2")
+            input.specialties__control__block__button(type="radio" name="rb" id="rb_3" value="img3")
+            label.specialties__control__block__button__label(for="rb_3")
