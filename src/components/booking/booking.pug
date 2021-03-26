@@ -1,0 +1,16 @@
+div.booking
+    div.booking__main
+        form.booking__main__form(action="test")
+            include ./../simple/form/form.pug
+            +form-label("book a table")
+            div.booking__main__form__fields
+                +form-text-field("name", "Name", "booking__main__form__name booking__main__form__fields__field")
+                +form-text-field("email", "Email", "booking__main__form__email booking__main__form__fields__field", 0, "email")
+                +form-text-field("phone", "Phone", "booking__main__form__phone booking__main__form__fields__field", 0, "phone")
+                +form-text-field("people", "People", "booking__main__form__phone booking__main__form__fields__field")
+                +form-text-field("date", "Date(mm/dd)", "booking__main__form__date booking__main__form__fields__field", 1)
+                +form-text-field("time", "Time", "booking__main__form__time booking__main__form__fields__field")
+            +form-button("book now", "booking__main__form__button")
+        include ./../simple/illustration/illustration
+        +illustration("./img/booking.png", "booking__main__illustration", "right")
+    div.booking__footer Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +40 729 131 637/+40 726 458 782

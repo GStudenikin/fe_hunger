@@ -10,6 +10,7 @@ import './components/simple/form/form.js'
 import './components/home/home.scss'
 import './components/about-us/about-us.scss'
 import './components/team/team.scss'
+import './components/booking/booking.scss'
 
 import './fonts/banny/banny.scss';
 import './fonts/opensans/opensans.scss';
