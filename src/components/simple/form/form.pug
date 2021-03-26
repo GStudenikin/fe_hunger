@@ -1,0 +1,19 @@
+//- how to use:
+    +text-field(id, placeholder, class_name, date)
+    if date = 1 then add date field with mask
+
+mixin form-label(label)
+    h1.form__label=label
+    div.form__decoration
+
+mixin form-text-field(id, placeholder, class_name, date, type)
+    if(date)
+        input.form__text-field.date(class=class_name type="text" id=id placeholder=placeholder)
+    else
+        if(!type)
+            input.form__text-field(class=class_name type="text" id=id placeholder=placeholder)
+        else
+            input.form__text-field(class=class_name type=type id=id placeholder=placeholder)
+
+mixin form-button(label, class_name)
+    button.form__button(class=class_name type="submit")=label

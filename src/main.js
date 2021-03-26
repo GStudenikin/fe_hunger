@@ -3,6 +3,8 @@ import './main.scss';
 //simple
 import './components/simple/article/article.scss'
 import './components/simple/illustration/illustration.scss'
+import './components/simple/form/form.scss'
+import './components/simple/form/form.js'
 
 // sections
 import './components/home/home.scss'
