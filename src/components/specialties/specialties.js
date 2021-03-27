@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     var currentButton = getCurrentButton();
     var slider = document.getElementsByClassName("specialties__slider")[0];
     var pos = currentButton[2]*100;
-    console.log("pos", pos);
     document.addEventListener("click", function (t) {
         if(t.target.id) {
             var slide = pos + (currentButton[2] - t.target.id[2]) * 100;
