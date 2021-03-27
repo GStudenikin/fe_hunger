@@ -12,6 +12,7 @@ import './components/about-us/about-us.scss'
 import './components/team/team.scss'
 import './components/booking/booking.scss'
 import './components/specialties/specialties.scss'
+import './components/specialties/specialties.js'
 
 import './fonts/banny/banny.scss';
 import './fonts/opensans/opensans.scss';
