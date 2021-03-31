@@ -15,5 +15,8 @@ mixin form-text-field(id, placeholder, class_name, date, type)
         else
             input.form__text-field(class=class_name type=type id=id placeholder=placeholder)
 
+mixin form-textarea(id, placeholder, class_name)
+    textarea.form__textarea(class=class_name id=id placeholder=placeholder)
+
 mixin form-button(label, class_name)
     button.form__button(class=class_name type="submit")=label
