@@ -18,6 +18,7 @@ import './components/private-events/private-events.scss'
 import './components/gallery/gallery.scss'
 import './components/contact/contact.scss'
 import './components/location/location.scss'
+import './components/footer/footer.scss'
 
 import './fonts/banny/banny.scss';
 import './fonts/opensans/opensans.scss';
