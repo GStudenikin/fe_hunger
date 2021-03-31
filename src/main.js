@@ -15,6 +15,7 @@ import './components/specialties/specialties.scss'
 import './components/specialties/specialties.js'
 import './components/menu/menu.scss'
 import './components/private-events/private-events.scss'
+import './components/gallery/gallery.scss'
 
 import './fonts/banny/banny.scss';
 import './fonts/opensans/opensans.scss';
