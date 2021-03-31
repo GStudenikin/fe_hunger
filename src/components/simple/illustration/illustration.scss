@@ -1,12 +1,14 @@
 .illustration {
   width: 600px;
   height: 475px;
+  position: relative;
 
   &__img {
     display: block;
     height: 475px;
     width: 475px;
     border-radius: 5px;
+    margin-bottom: -362.5px;
 
     &_left {
       float: right;
@@ -15,7 +17,6 @@
 
   &__frame {
     position: relative;
-    top: -366px;
     display: inline-block;
     width: 250px;
     height: 250px;
@@ -26,6 +27,35 @@
 
     &_right {
       left: 350px;
+    }
+  }
+
+  &__label {
+    z-index: 10;
+    display: inline-block;
+    position: absolute;
+    width: 476px;
+    height: 80px;
+    background-color: #000000;
+    font-family: Banny;
+    font-size: 24px;
+    line-height: 80px;
+    text-indent: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    &_left {
+      transform: rotate(90deg);
+      top: 198px;
+      left: 322px;
+      border-radius: 5px 5px 0 0;
+    }
+
+    &_right {
+      transform: rotate(-90deg);
+      top: 198px;
+      left: -199px;
+      border-radius: 5px 5px 0 0;
     }
   }
 }
