@@ -1,0 +1,94 @@
+.form {
+  &__subtitle {
+    font-family: OpenSans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+    max-width: 560px;
+    margin: auto;
+    position: relative;
+    top: 1px;
+  }
+}
+
+.contact {
+  width: 100%;
+  height: 645px;
+  display: flex;
+  justify-content: center;
+
+  &__form {
+    height: 500px;
+    position: relative;
+    top: 100px;
+    width: 90%;
+
+    &__fields {
+      position: relative;
+      top: 49px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &__text-field {
+        flex-basis: 33%;
+        height: 60px;
+      }
+
+      &__textarea {
+        margin-top: 10px;
+        width: 100%;
+        height: 120px;
+      }
+    }
+
+    &__footer {
+      position: relative;
+      top: 59px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__info {
+        width: 49%;
+        min-width: 460px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        &__item {
+          max-width: 30%;
+          min-width: 230px;
+          height: 25px;
+          display: flex;
+          align-items: center;
+
+          &__icon {
+            font-family: "Material Icons";
+            font-size: 30px;
+            line-height: 30px;
+            color: #e8c300;
+            margin-right: 10px;
+          }
+
+          &__text {
+            font-family: OpenSans;
+            font-weight: 700;
+            color: rgba(51, 51, 51, 0.5);
+            font-size: 12px;
+            line-height: 12px;
+          }
+        }
+      }
+
+      &__button {
+        width: 50%;
+        height: 60px;
+      }
+    }
+  }
+}

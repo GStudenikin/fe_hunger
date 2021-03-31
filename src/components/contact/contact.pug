@@ -1,0 +1,22 @@
+div.contact
+    form.contact__form(action="test")
+        include ./../simple/form/form.pug
+        +form-label("contact")
+        h2.form__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+        div.contact__form__fields
+            +form-text-field("name", "Name", "contact__form__fields__text-field")
+            +form-text-field("email", "Email", "contact__form__fields__text-field", 0, "email")
+            +form-text-field("phone", "Phone", "contact__form__fields__text-field", 0, "phone")
+            +form-textarea("message", "Message", "contact__form__fields__textarea")
+        div.contact__form__footer
+            div.contact__form__footer__info
+                span.contact__form__footer__info__item
+                    span.contact__form__footer__info__item__icon location_on 
+                    span.contact__form__footer__info__item__text 5th London Boulevard, U.K.
+                span.contact__form__footer__info__item
+                    span.contact__form__footer__info__item__icon  call
+                    span.contact__form__footer__info__item__text +40 729 131 637/+40 726 458 782
+                span.contact__form__footer__info__item
+                    span.contact__form__footer__info__item__icon  email
+                    span.contact__form__footer__info__item__text office@mindblister.com
+            +form-button("send message", "contact__form__footer__button")
