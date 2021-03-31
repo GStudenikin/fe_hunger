@@ -1,0 +1,14 @@
+div.private-events
+    div.team__decoration
+        svg.private-events__decoration__line(width="1px" height="100%")
+            line(x1="0" y1="1" x2="0" y2="100%" stroke="rgba(255, 255, 255, 0.2)")
+        svg.private-events__decoration__line(width="62px" height="100%")
+            line(x1="31" y1="0" x2="31" y2="100%" stroke="rgba(255, 255, 255, 0.2)" stroke-width="0.5")
+        svg.private-events__decoration__line(width="1px" height="100%")
+            line(x1="0" y1="1" x2="0" y2="100%" stroke="rgba(255, 255, 255, 0.2)")
+    div.private-events__label private events
+    div.private-events__info
+        include ./../simple/illustration/illustration
+        +illustration("./img/private-events/private-events1.png", "private-events__illustration", "left", "weddings")
+        +illustration("./img/private-events/private-events2.png", "private-events__illustration", "right", "corporate parties")
+        
