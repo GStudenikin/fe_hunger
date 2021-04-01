@@ -4,13 +4,13 @@ export default (window.$ = window.jQuery = jquery);
 
 $(document).ready(function(){
     const items = $(".home__header__menu__item");
-    $(".home__header__menu > a, .home__down-btn").click(function(e) {
+    console.log(items);
+    $(".home__header__menu > a, .home__down-btn, .home__main__menu__button").click(function(e) {
         for(let i = 0; i < items.length; i++) {
-            if(items[i] == this) {
+            if(items[i].id == this.id) {
                 var number = i;
                 break;
             }
-            var number = 0;
         }
         e.preventDefault();
         goToByScroll(this.id, number);
