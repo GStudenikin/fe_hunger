@@ -24,3 +24,22 @@ import './components/footer/footer.scss'
 import './fonts/banny/banny.scss';
 import './fonts/opensans/opensans.scss';
 import './fonts/material-icons/material-icons.scss';
+
+import jquery from "jquery";
+export default (window.$ = window.jQuery = jquery);
+
+    $(document).ready(function(){        
+        $(window).bind('scroll', function(){
+            if($(this).scrollTop() > 500)
+                $('.go-top').addClass('go-top_show');
+            else {
+                $('.go-top').removeClass('go-top_show');
+        }
+
+        $(".go-top").click(function(e) {
+            $('body,html').stop(true, false).animate({
+                scrollTop: 0
+            }, {duration: 1000});
+        });
+    });
+})

@@ -20,3 +20,32 @@ h1 {
   margin: 0;
   padding: 0;
 }
+
+.go-top {
+  display: block;
+  position: fixed;
+  top: 80%;
+  width: 40px;
+  height: 40px;
+  background-color: #e8c300;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 50%;
+  font-family: "Material Icons";
+  font-size: 40px;
+  line-height: 40px;
+  z-index: 2;
+  filter: drop-shadow(0 0px 5px rgba(0, 0, 0, 0.5));
+  transform: translate(-40px, 0);
+  transition-duration: 0.5s;
+
+  &:hover {
+    background-color: #e8c300;
+    color: #333333;
+  }
+
+  &_show {
+    transform: translate(40px, 0);
+    transition-duration: 0.5s;
+  }
+}
