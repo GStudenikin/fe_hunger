@@ -8,6 +8,7 @@ import './components/simple/form/form.js'
 
 // sections
 import './components/home/home.scss'
+import './components/home/home.js'
 import './components/about-us/about-us.scss'
 import './components/team/team.scss'
 import './components/booking/booking.scss'
