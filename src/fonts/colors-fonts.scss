@@ -1,0 +1,27 @@
+$main: #ffffff;
+$main-hover: rgba(255, 255, 255, 0.25);
+$accent: #e8c300;
+$accent-hover: rgba(232, 195, 0, 0.75);
+$accent-focus: rgba(232, 195, 0, 0.5);
+$dark: #000000;
+
+$fontPrimary: "Banny";
+$fontSecondary: "OpenSans";
+$fontIcon: "Material Icons";
+
+%sectionTitle {
+  font-family: $fontPrimary;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $dark;
+}
+
+%sectionSubtitle {
+  font-family: $fontSecondary;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-top: 11px;
+}
