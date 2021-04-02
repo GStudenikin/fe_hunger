@@ -1,3 +1,5 @@
+@import "./../../fonts/colors-fonts.scss";
+
 .break {
   width: 100%;
 }
@@ -27,19 +29,19 @@
     top: 317px;
     width: 40px;
     height: 40px;
-    background-color: #ffffff;
+    background-color: $main;
     color: #333333;
     text-decoration: none;
     border-radius: 50%;
-    font-family: "Material Icons";
+    font-family: $fontIcon;
     font-size: 40px;
     line-height: 40px;
     margin: auto;
     z-index: 2;
 
     &:hover {
-      background-color: #e8c300;
-      color: #ffffff;
+      background-color: $accent;
+      color: $main;
     }
   }
 
@@ -68,17 +70,17 @@
         display: inline-block;
         text-align: center;
         width: 60px;
-        font-family: "OpenSans";
+        font-family: $fontSecondary;
         font-style: normal;
         font-weight: 600;
         font-size: 12px;
         text-transform: uppercase;
         text-decoration: none;
-        color: #ffffff;
+        color: $main;
         line-height: 100px;
 
         &:hover {
-          background-color: rgba(255, 255, 255, 0.25);
+          background-color: $main-hover;
         }
 
         &:nth-child(4) {
@@ -101,8 +103,8 @@
     }
 
     &__label {
-      font-family: Banny-BoldRound;
-      color: #ffffff;
+      font-family: $fontPrimary;
+      color: $main;
       font-size: 96px;
       text-transform: uppercase;
     }
@@ -117,7 +119,7 @@
     &__decoration {
       width: 60px;
       height: 5px;
-      background: #e8c300;
+      background: $accent;
       border-radius: 50px;
       margin: auto;
     }
@@ -129,6 +131,7 @@
       justify-content: space-between;
       margin: auto;
       margin-top: 29px;
+      color: $main;
 
       &__button {
         display: inline-block;
@@ -145,23 +148,23 @@
         font-weight: 400;
 
         &_book {
-          color: #ffffff;
-          background-color: #e8c300;
+          color: $main;
+          background-color: $accent;
 
           &:hover {
-            border: 1px solid #ffffff;
+            border: 1px solid $main;
             box-sizing: border-box;
             line-height: 58px;
           }
         }
 
         &_explore {
-          color: #ffffff;
-          border: 1px solid #ffffff;
+          color: $main;
+          border: 1px solid $main;
           box-sizing: border-box;
 
           &:hover {
-            background-color: rgba(255, 255, 255, 0.25);
+            background-color: $main-hover;
           }
         }
       }
@@ -172,10 +175,10 @@
       width: 100%;
       height: 139px;
       line-height: 139px;
-      font-family: Banny;
+      font-family: $fontPrimary;
       font-size: 96px;
       text-transform: uppercase;
-      color: #ffffff;
+      color: $main;
       text-align: center;
     }
 
@@ -188,7 +191,7 @@
       text-align: center;
       letter-spacing: 0.5em;
       text-transform: uppercase;
-      color: #ffffff;
+      color: $main;
     }
   }
 
