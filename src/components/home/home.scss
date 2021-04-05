@@ -200,7 +200,7 @@
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    right: 80px;
+    right: 4vw;
     top: 340px;
     width: 60px;
     height: 220px;
@@ -246,6 +246,17 @@
       &:hover > img {
         margin-top: 18.5px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .home {
+    &__social {
+      top: 700px;
+      flex-direction: row;
+      width: 220px;
+      height: 60px;
     }
   }
 }
