@@ -2,16 +2,21 @@
   width: 600px;
   height: 475px;
   position: relative;
+  display: flex;
+  align-items: center;
 
   &__img {
     display: block;
     height: 475px;
     width: 475px;
     border-radius: 5px;
-    margin-bottom: -362.5px;
 
     &_left {
-      float: right;
+      margin-left: auto;
+    }
+
+    &_right {
+      margin-right: auto;
     }
   }
 
@@ -26,7 +31,12 @@
     filter: drop-shadow(0 0px 100px rgba(0, 0, 0, 0.5));
 
     &_right {
-      left: 350px;
+      margin-left: -100%;
+    }
+
+    &_left {
+      order: -1;
+      margin-right: -100%;
     }
   }
 
