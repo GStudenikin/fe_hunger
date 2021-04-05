@@ -9,7 +9,7 @@
     display: block;
     height: 475px;
     width: 475px;
-    border-radius: 5px;
+    border-radius: 6px;
 
     &_left {
       margin-left: auto;
@@ -32,6 +32,7 @@
 
     &_right {
       margin-left: -100%;
+      order: 3;
     }
 
     &_left {
@@ -43,7 +44,6 @@
   &__label {
     z-index: 10;
     display: inline-block;
-    position: absolute;
     width: 476px;
     height: 80px;
     background-color: #000000;
@@ -55,17 +55,49 @@
     color: #ffffff;
 
     &_left {
-      transform: rotate(90deg);
-      top: 197px;
-      left: 323px;
       border-radius: 5px 5px 0 0;
+      order: 3;
+      margin-left: -79.2%;
+      align-self: flex-start;
     }
 
     &_right {
-      transform: rotate(-90deg);
-      top: 198px;
-      left: -199px;
+      order: -1;
+      margin-right: -79.2%;
       border-radius: 5px 5px 0 0;
+      align-self: flex-start;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .illustration {
+    width: 46.16vw;
+    height: 36.543vw;
+
+    &__img {
+      width: 36.543vw;
+      height: 36.543vw;
+    }
+
+    &__frame {
+      width: 19.235vw;
+      height: 19.235vw;
+      border: 1.54vw solid #e8c300;
+    }
+
+    &__label {
+      width: 36.543vw;
+      height: 6.155vw;
+      line-height: 6.155vw;
+
+      &_left {
+        margin-left: -36.543vw;
+      }
+
+      &_right {
+        margin-right: -36.543vw;
+      }
     }
   }
 }
