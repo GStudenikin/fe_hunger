@@ -6,9 +6,8 @@
     width: 300%;
     height: 556px;
     display: flex;
-    transform: translate(0vw);
-    transition-duration: 2s;
-    transition-timing-function: ease;
+    position: relative;
+    left: -100%;
 
     &__info {
       width: 100vw;

@@ -1,23 +1,34 @@
-const control = document.querySelector(".specialties__control__block");
+import jquery from "jquery";
+export default (window.$ = window.jQuery = jquery);
 
-document.addEventListener("DOMContentLoaded", function () {     
-    var currentButton = getCurrentButton();
-    var slider = document.getElementsByClassName("specialties__slider")[0];
-    var pos = currentButton[2]*100;
-    document.addEventListener("click", function (t) {
-        if(t.target.id) {
-            var slide = pos + (currentButton[2] - t.target.id[2]) * 100;
-            slider.style.transform = "translate("+slide+"vw)";
-            currentButton = getCurrentButton();
-            pos = slide;
+$(document).ready(function(){
+    var elems = $(".specialties__slider__info");
+    order(elems.length, "#s", "#s0")
+    $(".selected").animate({opacity: 1}, 0);
+    $(".specialties__control__block__button").click(function(e) {
+        var id = this.id.replace("-btn", "");
+        var selected = $(".selected");
+        var elems = $(".specialties__slider__info");
+        if (id != selected.attr('id')) {
+            var old = $(".selected");
+            old.animate({opacity: 0}, 500);
+            old.removeClass("selected");
+            var currentId = "#".concat(id);
+            console.log("curId", currentId);
+            var current = $(currentId);
+            current.addClass("selected");
+            setTimeout(function (){
+                order(elems.length, "#s", currentId);
+                current.animate({opacity: 1}, 500);
+            }, 500);
+        } else {
         }
     });
 })
 
-function getCurrentButton() {
-    var controlBlock = document.getElementsByClassName("specialties__control__block");
-    var buttons = controlBlock[0].getElementsByTagName("input");
-    for(i = 0; i < buttons.length; i++)
-        if(buttons[i].checked)
-            return buttons[i].id;
+function order(elems, idPrefix, currentId) {
+    $(currentId).css({'order' : '1'});
+    for(let i = 1; i < elems; i++) {
+        $(idPrefix+((i+parseInt(currentId.replace(idPrefix, "")))%elems)).css({"order" : (i+1)%elems});
+    }
 }
