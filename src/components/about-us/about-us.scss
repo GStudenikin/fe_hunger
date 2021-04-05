@@ -6,33 +6,6 @@
   align-items: center;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 
-  &__illustration {
-    display: block;
-    width: 600px;
-    height: 475px;
-
-    &__img {
-      display: inline-block;
-      height: 475px;
-      width: 475px;
-      box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
-      border-radius: 5px;
-    }
-
-    &__frame {
-      position: relative;
-      top: -366px;
-      left: 350px;
-      display: inline-block;
-      width: 250px;
-      height: 250px;
-      border: 20px solid #e8c300;
-      border-radius: 5px;
-      box-sizing: border-box;
-      filter: drop-shadow(0 0px 100px rgba(0, 0, 0, 0.5));
-    }
-  }
-
   &__article {
     max-width: 40%;
   }
