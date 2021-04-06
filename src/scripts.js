@@ -1,7 +1,7 @@
 import './components/simple/form/form.js'
 import './components/home/home.js'
 import './components/specialties/specialties.js'
-import './components/carousel/carousel.js'
+import './components/gallery/gallery.js'
 
 import jquery from "jquery";
 export default (window.$ = window.jQuery = jquery);
