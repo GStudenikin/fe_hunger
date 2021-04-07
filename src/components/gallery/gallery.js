@@ -24,4 +24,19 @@ $(document).ready(function(){
       $(".gallery__imgs").css("left", ($(window).width() - $(".gallery__imgs").width())/2);
       $(".gallery__imgs").css("right", ($(window).width() - $(".gallery__imgs").width())/2);
   });
-})
+  $('.gallery__imgs__item').click(function() {
+    $('body').append('<div/ class="image-demo">');
+    $('.image-demo').append('<img class="image-demo__img" src='+$(this).attr("src")+">");
+    $("image-demo__img").ready(function(){
+      $(".image-demo").animate({opacity: 1})
+    });
+  });
+  $('body').click(function(event) {
+    if($(event.target).attr("class") === "image-demo") {
+      $(".image-demo").fadeOut();
+      setTimeout(function (){
+        $(".image-demo").remove();
+      }, 400)
+    }
+  });
+});
