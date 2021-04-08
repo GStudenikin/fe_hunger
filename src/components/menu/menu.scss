@@ -70,6 +70,8 @@
         color: #333333;
         text-transform: uppercase;
         text-align: center;
+        transition-property: background-color;
+        transition-duration: 400ms;
 
         &:hover {
           background-color: rgba(232, 195, 0, 0.75);
