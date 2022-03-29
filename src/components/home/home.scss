@@ -213,8 +213,8 @@
       border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 50%;
 
-      &_fb:hover {
-        background-color: #1877f2;
+      &_tg:hover {
+        background-color: #229ED9;
         border: none;
       }
 
@@ -223,16 +223,19 @@
         border: none;
       }
 
-      &_ig:hover {
-        background: radial-gradient(
-          circle at 30% 107%,
-          #fdf497 0%,
-          #fdf497 5%,
-          #fd5949 45%,
-          #d6249f 60%,
-          #285aeb 90%
-        );
-        border: none;
+      &_yt {
+        & > img {
+          filter: brightness(0) invert(1);
+        }
+
+        &:hover {
+          background-color: #ffffff;
+          border: none;
+          & > img {
+            filter: none;
+          }
+        }
+        
       }
 
       & > img {
