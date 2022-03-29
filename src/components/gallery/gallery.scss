@@ -22,6 +22,7 @@
     background-color: papayawhip;
 
     &__item {
+      cursor: zoom-in;
       pointer-events: auto;
       display: block;
       height: 360px;
@@ -35,6 +36,7 @@
   &__control {
     &__left,
     &__right {
+      cursor: pointer;
       height: 360px;
       width: 120px;
       text-align: center;
@@ -68,6 +70,7 @@
 }
 
 .image-demo {
+  cursor: pointer;
   opacity: 0;
   position: fixed;
   display: flex;
@@ -81,6 +84,7 @@
   justify-content: center;
 
   &__img {
+    cursor: zoom-out;
     pointer-events: auto;
     max-width: 80vw;
     max-height: 80%;

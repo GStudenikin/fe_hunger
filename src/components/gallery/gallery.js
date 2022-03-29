@@ -32,7 +32,7 @@ $(document).ready(function(){
     });
   });
   $('body').click(function(event) {
-    if($(event.target).attr("class") === "image-demo") {
+    if($(event.target).attr("class").includes("image-demo")) {
       $(".image-demo").fadeOut();
       setTimeout(function (){
         $(".image-demo").remove();
